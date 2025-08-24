@@ -1,0 +1,6 @@
+not gate      Not(y,x);
+and gate      And(y ,x1,x2);
+or gate       Or(y ,x1.x2);
+nand gate     Nand(y ,x1.x2);
+nor gate      Nor(y ,x1.x2);
+xor gate      Xor(y ,x1.x2);
