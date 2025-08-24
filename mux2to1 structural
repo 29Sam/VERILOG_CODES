@@ -1,0 +1,8 @@
+module mux2to1 (D0,D1,S,Y);
+input D0 ,D1,S;
+output Y;
+not(k1,S);
+and(k2,k1,D0);
+and(k3,S,D1);
+or(Y,k1,k2);
+endmodule
