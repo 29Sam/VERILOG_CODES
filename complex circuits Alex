@@ -1,2 +1,7 @@
-“A Demux is basically a Decoder with an Enable input connected to Data input.”
-normal encoders are hot encoded but priority encoders are not hot encoded 
+Demux:            A Demux is basically a Decoder with an Enable input connected to Data input.”
+priority encoders: normal encoders are hot encoded but priority encoders are not hot encoded 
+
+dont cares :Namely, the input valuations (x1, x2) = 00, 01, and 10 are possible, but 11 is guaranteed not to occur. Then we say that (x), x2) = 11 is a don't-care condition,
+            meaning that a circuit with x, and x2 as inputs can be designed by ignoring this condition. A function that has don't-care condition(s) is said to be incompletely specified.
+            Since these input valuations will never occur, the designer may assume that the function value for these valuations is either 1 or 0, whichever is more useful in trying
+            to find a minimum-cost implementation.
