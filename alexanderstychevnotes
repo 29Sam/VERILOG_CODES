@@ -20,3 +20,4 @@ always @(*)    Leave it to the Verilog compiler to figure out which signals appe
 
 
 
+
