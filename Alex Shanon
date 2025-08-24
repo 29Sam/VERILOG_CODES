@@ -1,0 +1,13 @@
+three input majority function using shanon expansion : Divide and rule 
+make 2 cases one of the input 0 1st case ,  that input 1 2nd case   and find out ouput for these 2 cases in terms of other inputs(their and /or etc)
+this can also be verified by making truth table , writing their SOP form and simplifying it , and then making gates .
+
+Shanon expansion theorem 
+1)1 variable (last thing in design will be a multiplexer)
+Any Boolean function can be expressed as f(w1,w2,...wn) as ~w1f(0,w2,....wn)+w1f(1,w2,w3....)    now you can see last thing in the circuit will be a multiplexer with select line as w1
+
+2)shanon for 2 variables (last thing can be a 4x1 multiplexer)
+any boolean expression can be expressed as   f(w1,w2,...wn)  as  ~w1.w2f(0,1,w3,w4,....) + w1w2f(.) +w1~w2f(.)+ ~w1~w2f(.)
+
+any damn circuit boolean expression can be made from multiplexers from scratchh.
+its just that how will you introduce the complement form nto the expression that holds important - cases will have subcases .
