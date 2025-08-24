@@ -1,0 +1,7 @@
+module adder_display(x,y,a,b,c,d,e,f,g);
+input x,y;
+output a,b,c,d,e,f,g;
+wire w1,w2;
+adder U1 (x,y,w1,w2);    //this is adder module defined earlier 
+display U2 (w1,w2,a,b,c,d,e,f,g);    //this is display module defined ealier 
+endmodule
