@@ -1,1 +1,2 @@
 “A Demux is basically a Decoder with an Enable input connected to Data input.”
+normal encoders are hot encoded but priority encoders are not hot encoded 
