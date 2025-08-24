@@ -1,0 +1,13 @@
+module mux4to1 ( D,S,Y);
+input [0:3]D;
+input [1:0]S;
+output [1:0]Y;
+reg Y;
+always @(D or S)
+       case (S)
+       0: Y=D[0];
+       1: Y=D[1];
+       2: Y=D[2];
+       3: Y=D[3];
+       endcase
+endmodule 
