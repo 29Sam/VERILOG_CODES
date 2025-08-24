@@ -1,0 +1,15 @@
+1)Gray code is an ordering of the binary numeral system such that two successive values differ in only one bit (binary digit). 
+they can solve error problem since on transition from one number to the next only differs in 1bit has to be observed 
+
+2)Conversion Rules:
+Binary → Gray
+G3 = B3
+G2 = B3 ⊕ B2
+G1 = B2 ⊕ B1
+G0 = B1 ⊕ B0
+Gray → Binary
+B3 = G3
+B2 = G3 ⊕ G2
+B1 = G3 ⊕ G2 ⊕ G1
+B0 = G3 ⊕ G2 ⊕ G1 ⊕ G0
+hence ,MSB remains same in both conversions; other bits derived by XOR relations.
