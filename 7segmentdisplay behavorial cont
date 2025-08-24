@@ -1,0 +1,11 @@
+module 7segdisplay (a,b,c,d,e,f,g,s1,s2);
+input s1,s2;
+output a,b,c,d,e,f,g;
+assign a=~s1;
+assign b=s2;
+assign c=~s2;
+assign d=~s1 .s2;
+assign e=~s1.~s2;
+assign f=s1.s2;
+assign g=~s1;
+endmodule
