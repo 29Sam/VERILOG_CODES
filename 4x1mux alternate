@@ -1,5 +1,5 @@
 module 4to1mux(D,S,Y);
-input [3:0]D;
+input [0:3]D;    // cant write as 3 0 ? why is that ?
 input [1:0]S;
 output Y;
 reg f ;
