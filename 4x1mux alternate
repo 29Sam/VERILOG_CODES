@@ -1,0 +1,15 @@
+module 4to1mux(D,S,Y);
+input [3:0]D;
+input [1:0]S;
+output Y;
+reg f ;
+always @(D or S)
+  if (S==0)          //S=00
+   Y=D[0];
+  else if (S==1)     // S=01
+   Y=D[1];
+  else if (S==2)     //S=10
+   Y=D[2];
+  else if (S==3)      //S=11
+   Y=D[3];
+end module
