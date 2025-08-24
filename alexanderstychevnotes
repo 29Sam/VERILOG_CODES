@@ -1,0 +1,22 @@
+verilog most closer to C endl
+vhdl to ada endl
+when you write stcturally , eg) Not(y,x)  -> 1st tem is the ouput for that gate  endl
+verilog codes can be written in 2 ways structural and behavorial and behavorial further into continuous and procedural  endl
+structural -basic gate components , behavorial continuous -assign and behavorial procedural -always statements    endl
+reg comes in behavorial procedural - it is anything that stores valuse unless and until you specify it some other value to store . endl
+
+in behavorial procedural the one that comes inside the procedure block is the( always and the inside if else statements) endl
+and the one that comes inside the always  specific bracket is the sensitive list  
+The always block is executed only when one of the signals in the sensitivity list has changed its value.  endl
+also in behavorial procedural Because the  Y(output) is updated inside a procedural statement (i.e., inside an always block) it must be declared of type reg.
+This is required so it can hold its value until the next time the always block is executed, which will happen only
+when one of the signals on the sensitivity list has changed its value. endl
+
+always@ syntax
+always @(x,y)
+always @(x or y)
+always @(*)    Leave it to the Verilog compiler to figure out which signals appear in the always block and add them to the sensitivity list.  endl cool!!!!
+
+
+
+
