@@ -1,0 +1,6 @@
+module mux4to1 (d0,d1,d2,d3,S,y);
+input d0,d1,d2,d3;
+input [1:0] S;
+output y;
+assign y= S[1]?(S[0]?d3:d2)(S[0]?d1:d0) ;
+end module
