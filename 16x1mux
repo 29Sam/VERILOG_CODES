@@ -1,0 +1,12 @@
+module mux16to1 ( D, S ,Y);
+input [0:15]D;
+input [3:0]S;
+ouput Y;
+wire [0:3]M;     // like signals in vhdl 
+
+mux4to1 MUX1 (D[0:3],S[1:0],M[0]);
+mux4to1 MUX2 (D[4:7],S[1:0],M[1]);
+mux4to1 MUX3 (D[8:11],S[1:0],M[2]);
+mux4to1 MUX4 (D[12:15],S[1:0],M[3]);
+mux4to1 MUX5 (M[0:3],S[3:2],Y);
+end module 
