@@ -1,0 +1,36 @@
+Windows PowerShell
+
+
+
+
+PS C:\iverilog\tutorial1_with_testbench.v> iverilog tutorial1_with_testbench.v
+tutorial1_with_testbench.v: No such file or directory
+No top level modules, and no -s option.
+PS C:\iverilog\tutorial1_with_testbench.v> vvp a.out
+a.out: Unable to open input file.
+PS C:\iverilog\tutorial1_with_testbench.v>  gtkwave dump.vcd
+
+GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+
+Error opening  .vcd file 'dump.vcd'.
+Why: No such file or directory
+PS C:\iverilog\tutorial1_with_testbench.v>  iverilog tutorial1_with_testbench.v
+tutorial1_with_testbench.v: No such file or directory
+No top level modules, and no -s option.
+PS C:\iverilog\tutorial1_with_testbench.v>  vvp a.out
+a.out: Unable to open input file.
+PS C:\iverilog\tutorial1_with_testbench.v> gtkwave dump.vcd
+
+GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+
+Error opening  .vcd file 'dump.vcd'.
+Why: No such file or directory
+PS C:\iverilog\tutorial1_with_testbench.v> iverilog .\tutorial1_with_testbench.v.txt
+PS C:\iverilog\tutorial1_with_testbench.v> vvp .\a.out
+VCD info: dumpfile dump.vcd opened for output.
+PS C:\iverilog\tutorial1_with_testbench.v> gtkwave .\dump.vcd
+
+GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+
+[0] start time.
+[30] end time.
